@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PAOK · Educación financiera para familias</title>
+  <style>
+    :root {
+      --primary: #1e88e5;
+      --secondary: #f5f7fa;
+      --dark: #1f2933;
+      --light: #ffffff;
+      --accent: #ffb703;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', system-ui, sans-serif;
+    }
+
+    body {
+      background: var(--secondary);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), #1565c0);
+      color: var(--light);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    nav {
+      background: var(--light);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      color: var(--primary);
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+    }
+
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: var(--primary);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--light);
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+    }
+
+    .highlight {
+      background: var(--accent);
+      color: #000;
+      padding: 0.2rem 0.5rem;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: var(--dark);
+      color: var(--light);
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 4rem;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+
+    button {
+      background: var(--primary);
+      color: var(--light);
+      border: none;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    button:hover {
+      background: #0d47a1;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PAOK</h1>
+    <p>Educación financiera online para familias con hijos.  
+      Aprender a manejar el dinero en casa es el mejor regalo para el futuro.</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre PAOK</a>
+    <a href="#temas">Temas</a>
+    <a href="#blog">Blog</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>Sobre PAOK</h2>
+    <p>
+      PAOK nace con la misión de ayudar a las familias a mejorar su relación con el dinero
+      y a enseñar a los niños desde pequeños valores como el ahorro, la planificación
+      y la responsabilidad financiera.
+    </p>
+  </section>
+
+  <section id="temas">
+    <h2>Temas principales</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Finanzas familiares</h3>
+        <p>Organización del presupuesto, control de gastos y objetivos familiares.</p>
+      </div>
+      <div class="card">
+        <h3>Educación financiera infantil</h3>
+        <p>Cómo enseñar a los hijos a ahorrar y entender el valor del dinero.</p>
+      </div>
+      <div class="card">
+        <h3>Ahorro inteligente</h3>
+        <p>Estrategias prácticas para ahorrar sin sacrificar calidad de vida.</p>
+      </div>
+      <div class="card">
+        <h3>Hábitos financieros</h3>
+        <p>Pequeños hábitos diarios que generan grandes resultados a largo plazo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Últimos artículos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Cómo hablar de dinero con tus hijos</h3>
+        <p>
+          Aprender a comunicar conceptos financieros según la edad es clave para su futuro.
+        </p>
+        <span class="highlight">Nuevo</span>
+      </div>
+      <div class="card">
+        <h3>El presupuesto familiar en 5 pasos</h3>
+        <p>
+          Una guía sencilla para organizar las finanzas del hogar sin estrés.
+        </p>
+      </div>
+      <div class="card">
+        <h3>Errores financieros comunes en familias</h3>
+        <p>
+          Identifica los errores más habituales y aprende cómo evitarlos.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Quieres recibir nuevos contenidos y recursos gratuitos?</p>
+    <button onclick="suscribirse()">Suscribirme</button>
+  </section>
+
+  <footer>
+    <p>© 2026 PAOK · Educación financiera para familias</p>
+  </footer>
+
+  <script>
+    function suscribirse() {
+      alert("Gracias por tu interés en PAOK. ¡Próximamente habilitaremos la suscripción!");
+    }
+  </script>
+
+</body>
+</html>
